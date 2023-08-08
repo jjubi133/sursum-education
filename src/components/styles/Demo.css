@@ -1,0 +1,193 @@
+.container{
+    margin: 0;
+    width: 100%;
+    animation: 2s infinite alternate ease-in-out;
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+.navbar{
+    background:linear-gradient(to right, #319799, #5eade6, #948edb);
+    min-height:80px;
+    position:relative;
+}
+.grow{transition: all .3s ease-in-out;}
+.grow:hover{transform: scale(1.03);}
+
+/*--------------Tab Section----------------*/
+.tabs{
+    list-style: none;
+    position: relative;
+}
+.tab_content{ /*in tabs.js*/
+    padding: 0% 10% 6% 10%;
+    line-height: 2;
+    text-align: left;
+    overflow-y: scroll;
+}
+ /*nav table css */
+ .tab_list {
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+.tab_list_item {
+    display: inline-block;
+    list-style: none;
+    margin-bottom: -1px;
+    padding: 10px 20px;
+}
+.tab_list_active {
+    background-color: white;
+    border: solid #ccc;
+    border-width: 1px 1px 0 1px;
+    text-indent:0;
+}
+/*---------------------tab content (supplemental)-------------------*/
+.lesson_title{
+    font-family: Andale Mono, monospace;
+    color:#5eade6;
+    text-align:center;
+    font-weight: bold;
+    margin: 5% 6%;
+}
+.tab_header{
+    font-weight:bolder;
+    margin-top:20px;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+}
+.paragraph, .paragraph_NI, .list{
+    line-height: 2.5;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    padding-bottom: 1%;
+}
+.ascii-art {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vh;
+    height: 30vh;
+}
+.paragraph{text-indent: 5%;}
+.code_block{
+    border: 1px solid black;
+    margin: 10px 0 15px 0;
+}
+.in_1{margin-left: 20px;}
+.in_2{margin-left: 40px;}
+.in_3{margin-left: 60px;}
+.input{padding: 15px;}
+.output{
+    background-color:rgb(240, 240, 240);
+    padding: 15px 0;
+}
+.output div{padding: 0 15px}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0 15px 0;
+}
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+    min-width: 100px;
+}
+tr:nth-child(odd) {
+    background-color: #f8f8f8;
+}
+.multi{display:block;}
+.comment{color:#aaaaaa; display:inline-block;}
+.str{color:#a1181c; display:inline-block;}
+.blue{color: blue; display:inline-block;}
+.purp{color:#7a33b1; display:inline-block;}
+.gre{color:green; display:inline-block;}
+.yel{color:rgb(179, 179, 5); display:inline-block;}
+.bold{font-weight:bold; display:inline-block;}
+/*-------------Bottom section----------------*/
+.bottom_section{
+    background:white;
+    padding: 6vh 10vw;
+    text-align: center;
+}
+.lesson_backbutton button{
+    background: #23d2d3;
+    border: 1px solid #5eade6;
+    border-radius:9px;
+    text-align: center;
+    width:auto;
+    color: white;
+    padding: 20px;
+    font-weight:bold;
+    text-transform:uppercase;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+}
+.lesson_backbutton button:hover{background: #6192e0;}
+
+/*------------Desktop Setup---------------*/
+@media only screen and (min-width: 1051px) {
+    .split {
+        height: 90vh;
+        width: 50%;
+        position: absolute;
+        overflow: hidden;
+        z-index: 1;
+        border-bottom: 1px solid #bbb;
+    }
+    .left {
+        left: 0;
+        background: black;
+    }
+    .right {
+        right: 0;
+        list-style: none;
+        border-left: 1px solid #bbb;
+    }
+    .lesson_video iframe{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        height:50vh;
+        width:50vw;
+    }
+    .lesson_title{font-size: 25px;}
+    .tab_list_item {font-size:15px;}
+    .tab_header{font-size:18px;}
+    .paragraph, .paragraph_NI, .list{font-size:15px;}
+    .code_block{font-size:13px;}
+    .tab_content{ /*in tabs.js*/height: 65vh;}
+    .bottom_section{margin-top: 90vh;}
+    .lesson_backbutton button{font-size: 20px;}
+}
+/*-------------Mobile setup--------------*/
+@media only screen and (max-width: 1050px) {
+    .split {
+        width: 100%;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .right{border-bottom: 1px solid #bbb;}
+    .lesson_video{
+        margin-top: 20px;
+        padding:10px 0 6px 0;
+        width:100%;
+        text-align: center;
+    }
+    .lesson_video iframe{
+        border: black solid 2px;
+        text-align: center;
+        width: 75%;
+        min-height: 50vh;
+    }
+    .lesson_title{font-size: 20px;}
+    .tab_list_item {font-size:13px;}
+    .tab_header{font-size:15px;}
+    .paragraph, .paragraph_NI, .list{font-size:13px;}
+    .code_block{font-size:11px;}
+    .tab_content{ /*in tabs.js*/height: 70vh;}
+    .lesson_backbutton button{font-size: 15px;}
+}

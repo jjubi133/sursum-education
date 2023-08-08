@@ -1,0 +1,55 @@
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin: 1% 0 4% 0; /* Add a top margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-family:Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+  }
+  /* Style the submit button with a specific background color etc */
+  input[type=submit], input[type=reset] {
+    text-align:center;
+    float:center;
+    color: white;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    border-radius: 12px;
+    margin: 10px;
+    padding: 15px 30px;
+    transition: all .3s ease-in-out;
+    font-family:Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+  }
+  input[type=submit]{background-color:#4CAF50}
+  input[type=reset]{background-color:#dd4b39}
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover, input[type=reset]:hover  {
+    background-color: #45a049;
+    transform: scale(1.1);
+  }
+  input[type=reset]:hover  {
+    background-color: #e33829;
+    transform: scale(1.1);
+  }
+  textarea[type=submit] {
+    font-family:Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+  }
+  .container {
+    padding: 0;
+    text-align:left;
+  }
+  form{
+    margin: 0 10%;
+    padding-bottom:2%;
+    border:1px rgb(181, 181, 181) solid;
+    border-radius: 12px;
+    padding: 10%;
+    background-color: rgb(247, 247, 247);
+  }
+  .form_buttons{
+    text-align:center;
+    float:center;
+  }

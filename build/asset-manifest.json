@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0f18d321.chunk.css",
+    "main.js": "/static/js/main.6bf4af5d.chunk.js",
+    "main.js.map": "/static/js/main.6bf4af5d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5b62d748.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5b62d748.js.map",
+    "static/js/2.9ccc02e8.chunk.js": "/static/js/2.9ccc02e8.chunk.js",
+    "static/js/2.9ccc02e8.chunk.js.map": "/static/js/2.9ccc02e8.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ed42ee66ca3206109a176fc16fc94065.js": "/precache-manifest.ed42ee66ca3206109a176fc16fc94065.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.0f18d321.chunk.css.map": "/static/css/main.0f18d321.chunk.css.map",
+    "static/js/2.9ccc02e8.chunk.js.LICENSE.txt": "/static/js/2.9ccc02e8.chunk.js.LICENSE.txt",
+    "static/media/caret_down.svg": "/static/media/caret_down.a19124d5.svg",
+    "static/media/caret_up.svg": "/static/media/caret_up.c78b3fdb.svg",
+    "static/media/childimpact.svg": "/static/media/childimpact.09a28ef8.svg",
+    "static/media/fcs.svg": "/static/media/fcs.716a8a9f.svg",
+    "static/media/final_logo_white.svg": "/static/media/final_logo_white.8266ea43.svg",
+    "static/media/helpinghands.svg": "/static/media/helpinghands.3e1c5407.svg",
+    "static/media/QuizTemplate.css": "/static/media/icon-check.fa9b4dd4.svg",
+    "static/media/map.png": "/static/media/map.bdd2b13e.png",
+    "static/media/our_process.png": "/static/media/our_process.1f15d77c.png",
+    "static/media/our_process_icons.svg": "/static/media/our_process_icons.3692dbec.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5b62d748.js",
+    "static/js/2.9ccc02e8.chunk.js",
+    "static/css/main.0f18d321.chunk.css",
+    "static/js/main.6bf4af5d.chunk.js"
+  ]
+}

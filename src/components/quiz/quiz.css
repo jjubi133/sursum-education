@@ -1,0 +1,68 @@
+body {
+  font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+  font-size: 15px;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.quizComponent{
+  height: auto;
+  font-size: 15px;
+  margin:auto;
+  margin-bottom: 50px;
+  color:black;
+  font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+}
+.question-option{
+  font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+  border-radius: 8px;
+  border: 1px solid #eee;
+  padding: 5px;
+  margin: 10px 0;
+  width: 100%;
+  color: black;
+  background: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 5px 13px 1px rgba(0,0,0,0.1);
+  text-align:left;
+}
+.question-option span{
+  height: 50px;
+  width: 50px;
+  font-size:20px;
+  text-align: center;
+  background: rgb(235, 235, 237);
+  color: rgba(0,0,0,0.6);
+  line-height: 2.5;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.question-option:hover{
+  box-shadow: 1px 6px 17px 8px rgba(0,0,0,0.1);
+}
+.question-option:hover span{
+  background: rgb(48, 48, 48);
+  color: whitesmoke;
+}
+.question-option p{width: 80%;}
+.correct{
+  background: #2daf1c;
+  color: whitesmoke;
+}
+.wrong{ 
+  background: #fe3636;
+  color: whitesmoke;
+}
+/*------------Desktop Setup---------------*/
+@media only screen and (min-width: 1051px) {
+  h2{font-size:18px}
+  .question-option{font-size: 15px;}
+}
+/*-------------Mobile setup--------------*/
+@media only screen and (max-width: 1050px) {
+  h2{font-size:15px}
+  .question-option{font-size: 13px;}
+}
